@@ -1,17 +1,17 @@
 import { Animal } from './Animals.js';
 
 class Bird extends Animal {
-    constructor(name, color, wingsCount, repeatSound, fly) {
+    constructor(name, color) {
         super (name, color)
-        this.wingsCount = wingsCount;
-        this.repeatSound = repeatSound;
-        this.fly = fly;
+        this.wingsCount = 2;
+        this.voice = 'hello puk';
+        this.canFly = true;
     }
-    introduce() {
-        console.log(`Labas, as esu ${this.name} mano spalva ${this.color} as sakau ${this.repeatSound} as turiu ${this.wingsCount} sparnus, as galiu ${this.fly}`);
+    sound() {
+        console.log(`${this.name}: ${this.voice}`);
     }
-    voice() {
-        console.log(`${this.name}: ${this.sound}`);
+    fly() {
+        console.log(`${this.name}: ${this.canFly ? 'flies away' : 'oops i can not fly' }`);
     }
 }
 

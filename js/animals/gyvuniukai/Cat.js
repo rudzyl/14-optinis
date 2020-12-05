@@ -4,7 +4,7 @@ class Cat extends Pet {
     constructor(name, color, legsCount, likePlaying, walk){
         super(name, color, legsCount, likePlaying, walk);
 
-        this.sound = 'miau';
+        this.voice = 'miau';
         
     }
 }

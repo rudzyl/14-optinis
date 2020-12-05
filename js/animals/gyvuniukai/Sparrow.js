@@ -4,7 +4,7 @@ class Sparrow extends Bird {
     constructor(name, color, wingsCount, reapeatSound, fly){
         super(name, color, wingsCount, reapeatSound, fly);
 
-        this.sound = 'cyp-cyp';
+        this.voice = 'cyp-cyp';
     }
 }
 

@@ -11,30 +11,33 @@ import { Salmon } from './gyvuniukai/Salmon.js';
 const suo = new Dog('Dzeris', 'black', 'four', 'fetch', 'fast');
 const kate = new Cat('Luna', 'white', 'four', 'mice', 'zig-zag');
 const triusis = new Rabbit('Hopkinsas', 'brown', 'four', 'sleep', 'hop');
-const vista = new Chicken('Vistele', 'yellow', 'two', 'cik-cik-cik', 'fly a little');
-const papuga = new Parrot('Kyra', 'green', 'two', 'Goodbye', 'fly in home');
+const vista = new Chicken('Vistele', 'yellow');
+const papuga = new Parrot('Kyra', 'green');
 const zvirblis = new Sparrow('Jack', 'grey', 'two', 'Is captain Jack Sparrow', 'fly far');
 const juruKlounas = new Clownfish('Nemo', 'orange', 'ten', 'through the ocean');
 const auksineZuvele = new Goldfish('Goldie', 'gold', 'five', 'in circles');
 const lasisa = new Salmon('Swen', 'silver', 'eight', 'up to waterfall');
 
 suo.introduce();
-suo.voice();
+suo.sound();
 
 kate.introduce();
-kate.voice();
+kate.sound();
 
 triusis.introduce();
-triusis.voice();
+triusis.sound();
 
-vista.introduce();
-vista.voice();
 
-papuga.introduce();
-papuga.voice();
+vista.sound();
+vista.fly();
 
-zvirblis.introduce();
-zvirblis.voice();
+
+papuga.sound();
+papuga.fly();
+papuga.repeatSound('duok sausaini');
+
+
+zvirblis.sound();
 
 juruKlounas.introduce();
 juruKlounas.voice();
@@ -45,24 +48,5 @@ auksineZuvele.voice();
 lasisa.introduce();
 lasisa.voice();
 
-/*
 
-const goldfish = new Animal('goldfish', 'golden', 'bubbles', );
-console.log(goldfish);
-const clownfish = new Animal('clownfish', 'orange', 'where is Nemo?', );
-console.log(clownfish);
-const salmon = new Animal('salmon', 'silver', 'salmonelioze', );
-console.log(salmon);
-
-dog.introduce();
-
-cat.introduce();
-rabbit.introduce();
-parrot.introduce();
-sparrow.introduce();
-chicken.introduce();
-goldfish.introduce();
-clownfish.introduce();
-salmon.introduce();
-*/
 

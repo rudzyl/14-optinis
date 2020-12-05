@@ -1,11 +1,14 @@
 import { Bird } from '../Bird.js';
 
 class Chicken extends Bird {
-    constructor(name, color, wingsCount, reapeatSound, fly){
-        super(name, color, wingsCount, reapeatSound, fly);
+    constructor(name, color, dedekle){
+        super(name, color);
 
-        this.sound = 'puk-pudak';
+        this.voice = 'puk-pudak';
+        this.canFly = false;
+        this.dedekle = dedekle;
     }
+   
 }
 
 export { Chicken }

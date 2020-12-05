@@ -1,10 +1,14 @@
 import { Bird } from '../Bird.js';
 
 class Parrot extends Bird {
-    constructor(name, color, wingsCount, reapeatSound, fly){
-        super(name, color, wingsCount, reapeatSound, fly);
+    constructor(name, color){
+        super(name, color);
 
-        this.sound = 'Hello?';
+        this.voice = 'Hello?';
+    }
+
+    repeatSound(sound) {
+        console.log(`${this.name} repeats the sound: ${sound}`);
     }
 }
 
